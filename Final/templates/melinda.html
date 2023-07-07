@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lawyer.css') }}">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+    <title>Melinda Justina</title>
+</head>
+ <!-- Navbar Section -->
+ <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="{{url_for('dashboard')}}" class="navbar__links">Account</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{url_for('dashboard')}}" class="navbar__links">Lawyers</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{url_for('dashboard')}}" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__btn"><a href="{{url_for('logout')}}" class="button">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+<body>
+    
+    <h1 class="name">Melinda Justina</h1>
+    
+    <img src="/static/pic2.jpeg" alt="" class="image">
+    
+    <p class="description">With over 15 years of experience in civil litigation, Melinda Johnson is a seasoned attorney specializing in personal injury and medical malpractice cases. She graduated with honors from Harvard Law School and went on to work at a prestigious law firm, where she successfully represented numerous clients in complex legal disputes. Melinda's dedication to her clients and her meticulous attention to detail have earned her a reputation for delivering favorable outcomes. Her expertise in negotiation and courtroom litigation has resulted in multi-million dollar settlements and verdicts. Melinda's commitment to justice, combined with her compassionate approach, makes her a trusted advocate for those seeking legal representation.</p>
+    
+    <p class="rating">Customer Rating: 4/5</p>
+       
+    <button class="message">Email</button>
+
+
+    <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+              <a href="/">Careers</a> <a href="/">Investments</a>
+              <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+              <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Videos</h2>
+              <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+              <a href="/">Agency</a> <a href="/">Influencer</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+            </div>
+            <p class="website__rights">© NEXT 2020. All rights reserved</p>
+            <div class="social__icons">
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                target="_blank"
+                aria-label="Youtube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body>
+    <section class="container">
+        <form>
+            <i class="fas fa-search"></i>
+            <input type="text" name="" id="search-item" placeholder="Search for lawyers" onkeyup="search()">
+        </form>
+        <div class="lawyer-list" id="lawyer-list">
+
+            <div class="lawyer">
+                <img src="/static/alex.png" alt="">
+                <div class="l-details">
+                    <h2>Alex Hormozi</h2>
+                    <h3>alexhormozi@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/istockphoto-1312204115-612x612.jpg" alt="">
+                <div class="l-details">
+                    <h2>Alexa Habi</h2>
+                    <h3>alexhabi@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/arthur.jpg" alt="">
+                <div class="l-details">
+                    <h2>Arthur Froz</h2>
+                    <h3>arthur22froz@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/emily.jpg.webp" alt="">
+                <div class="l-details">
+                    <h2>Emily Nicolas</h2>
+                    <h3>emilythenicolas@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/joe.jpg" alt="">
+                <div class="l-details">
+                    <h2>Joe Abood</h2>
+                    <h3>joea12@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/john.jpg" alt="">
+                <div class="l-details">
+                    <h2>John Malle</h2>
+                    <h3>johnm.alle@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/moses.jpg" alt="">
+                <div class="l-details">
+                    <h2>Moses Thafte</h2>
+                    <h3>the_moses@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/pic2.jpeg" alt="">
+                <div class="l-details">
+                    <h2>Melinda Justina</h2>
+                    <h3>the_melinda@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/pic3.jpeg" alt="">
+                <div class="l-details">
+                    <h2>Nizar Abi Zaher</h2>
+                    <h3>nizabizaher@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/pic4.jpg" alt="">
+                <div class="l-details">
+                    <h2>Mark Spencer</h2>
+                    <h3>bigtimelawyer@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/john.jpg" alt="">
+                <div class="l-details">
+                    <h2>Joseph Frank</h2>
+                    <h3>frankiejo@hotmail.com</h3>
+                </div>
+            </div>
+
+            <div class="lawyer">
+                <img src="/static/joe.jpg" alt="">
+                <div class="l-details">
+                    <h2>Maaha Isk</h2>
+                    <h3>mahabis@gmail.com</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

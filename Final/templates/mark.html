@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lawyer.css') }}">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+    <title>Mark Spencer</title>
+</head>
+ <!-- Navbar Section -->
+ <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>NEXT</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="{{url_for('dashboard')}}" class="navbar__links">Account</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{url_for('dashboard')}}" class="navbar__links">Lawyers</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{url_for('dashboard')}}" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__btn"><a href="{{url_for('logout')}}" class="button">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+<body>
+    
+    <h1 class="name">Mark Spencer</h1>
+    
+    <img src="/static/pic3.jpeg" alt="" class="image">
+    
+    <p class="description">Mark Spencer is a highly regarded criminal defense attorney with a wealth of experience defending clients facing a wide range of charges. After graduating at the top of his class from Stanford Law School, Mark worked as a public defender, handling high-profile cases that garnered national attention. His exceptional trial skills, strategic thinking, and deep knowledge of criminal law have consistently led to successful outcomes for his clients. Mark's expertise extends to white-collar crimes, drug offenses, and DUI cases. He is known for his unwavering commitment to protecting the rights of his clients and ensuring fair treatment within the legal system.</p>
+    
+    <p class="rating">Customer Rating: 3/5</p>
+       
+    <button class="message">Email</button>
+
+
+    <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+              <a href="/">Careers</a> <a href="/">Investments</a>
+              <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+              <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Videos</h2>
+              <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+              <a href="/">Agency</a> <a href="/">Influencer</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+            </div>
+            <p class="website__rights">© NEXT 2020. All rights reserved</p>
+            <div class="social__icons">
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                target="_blank"
+                aria-label="Youtube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+</body>
+</html>
